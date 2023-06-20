@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>MT</title>
+</head>
+<body>
+    <!-- Header -->
+    <header style="background-image: url(ftdefundo.jpg)">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="" alt="      ">
+                </a> 
+                <ul class="ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="Servicos.html">Serviços</a></li>
+                    <li><a class="btn" href="https://wa.me/5581985166289">Contato</a></li>
+                </ul>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>MOTOCYCLE CUSTOM GARAGES</h1>
+                    <p>VENHA CONHECER NOSSOS PRODUTOS E SERVIÇOS</p>
+                    <a href="https://wa.me/5581985166289" class="btn">Entrar em Contato</a> 
+                </div>
+            </section>
+        </div>
+    </header>
+    <!-- End Header -->
+    
+    <!-- Faça mais -->
+    <section class="faca-mais">
+        <div class="container">
+            <div class="faca-mais-text">
+                <h3>Faça mais por seus sonhos</h3>
+                <p>
+                    Realize o sonho de possuir uma moto personalizada, deixe-a com o seu estilo.
+                    Venha conhecer os melhores profissionais do ramo.
+                </p>
+                <a href="Servicos.html" class="btn animate-btn">SERVIÇOS</a>
+            </div>
+            <div class="faca-mais-img">
+                <img src="foto2.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- End Faça mais -->
+    
+    <!-- Depoimentos -->
+    <section>
+        <div class="container">
+            <h3>Nossos Depoimentos</h3>
+            <p>Leia os depoimentos de alguns de nossos clientes</p>
+            <div class="cards">
+                <!-- Card item 1 -->
+                <div class="cards-item">
+                    <img src="foto5.jpeg" alt="Matheus">
+                    <p class="nome-user">Matheus Jones</p>
+                    <p class="depoimento-user">
+                        “Tenho apenas um ano e meio de carteira de moto e ainda estou aprendendo a pilotar.
+                         Mas já rodo por toda a Região Metropolitana de Belo Horizonte a trabalho. 
+                         O que é mais atraente nas motocicletas é a economia, em comparação com os carros. 
+                         Elas fazem até 42 quilômetros por litro de combustível.”
+                    </p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- End Card item 1 -->
+                <!-- Card item 2 -->
+                <div class="cards-item">
+                    <img src="ftnova.jpeg" alt="Beatriz">
+                    <p class="nome-user">Beatriz Silva</p>
+                    <p class="depoimento-user">
+                        “Achei maravilhoso o atendimento, a atenção, a rapidez com que me 
+                        atenderam e o capricho que tiveram. 
+                        Comprei também capacetes personalizados para dar de presente 
+                        para o meu marido e ele gostou muito.
+                         Os produtos são de ótima qualidade, 
+                        vieram muito bem embalados e a entrega foi bem rápida. 
+                        Eu super-recomendo e virei cliente! Abraços!”
+                    </p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- End Card item 2 -->
+            </div>
+        </div>
+    </section>
+    <!-- End Depoimentos -->
+    
+    <!-- Mídias Sociais -->
+    <div class="medias-sociais">
+        <a href="#" class="btn"> <i class="fab fa-youtube"></i> </a>
+        <a href="#" class="btn"> <i class="fab fa-instagram"></i> </a>
+        <a href="#" class="btn"> <i class="fab fa-whatsapp"></i> </a>
+    </div>
+
+    <!-- Botão para enviar e-mail -->
+    <button id="emailButton">Enviar e-mail</button>
+
+    <!-- Link para o WhatsApp -->
+    <a id="whatsappLink" href="#">WhatsApp</a>
+
+    <!-- Incluir o script JavaScript -->
+    <script>
+        // Função para abrir o cliente de e-mail com um e-mail predefinido
+        function sendEmail() {
+            window.location.href = 'mailto:seuemail@example.com';
+        }
+
+        // Função para abrir o WhatsApp em uma nova guia
+        function openWhatsApp() {
+            window.open('https://wa.me/5581985166289', '_blank');
+        }
+
+        // Adicionar um ouvinte de evento ao botão de e-mail
+        var emailButton = document.getElementById('emailButton');
+        emailButton.addEventListener('click', sendEmail);
+
+        // Adicionar um ouvinte de evento ao link do WhatsApp
+        var whatsappLink = document.getElementById('whatsappLink');
+        whatsappLink.addEventListener('click', openWhatsApp);
+    </script>
+</body>
+</html>
